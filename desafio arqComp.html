@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="ipt_registro1" placeholder="1° Registro">
+    <input id="ipt_registro2" placeholder="2° Registro">
+    <input id="ipt_registro3" placeholder="3° Registro">
+    <input id="ipt_registro4" placeholder="4° Registro">
+    <input id="ipt_registro5" placeholder="5° Registro">
+    <button onclick="analisar()">Analisar</button>
+    <div id="div_msg"></div>
+</body>
+</html>
+<script>
+
+
+    function analisar() {
+        
+        var registro1 = Number (ipt_registro1.value);
+        var registro2 = Number (ipt_registro2.value);
+        var registro3 = Number (ipt_registro3.value);
+        var registro4 = Number (ipt_registro4.value);
+        var registro5 = Number (ipt_registro5.value);
+
+        var Saida1 = registro1 && registro3 && registro5;
+        var Saida2 = registro2 != registro4 || registro4 != registro2;
+        var Saida3 = registro1 && registro3 && !registro4;
+        var Saida3 = registro1 && registro3 && !registro4;
+        var Saida4 = Saida1 || Saida2;
+        var Saida5 = Saida2 && registro4;
+        var Saida6 = Saida2 && registro4;
+        var Saida7 = Saida3 && registro5;
+        var Saida8 = Saida5 || !Saida7;
+        var Saida9 = Saida6 || !Saida8;
+        
+
+            if (Saida1) {
+            
+            if (Saida2 ) {
+        
+            }
+
+            if (Saida3 ) {
+
+            } 
+            else if(Saida4){
+
+            } 
+            else if(Saida6) {
+
+            } 
+            else if (!Saida7){
+
+            } 
+            else if (Saida8){
+
+            } 
+            else if (Saida9){
+
+            }
+
+        }
+        
+    }
+
+</script>
